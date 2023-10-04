@@ -1,4 +1,6 @@
+
 <?php
+//Session Handling
 if (session_id() == '' || !isset($_SESSION)) {
     session_start();
 }
@@ -59,6 +61,7 @@ include 'config.php';
             <hr>
 
             <?php
+ //prpare statements for sql queries
             $user = $_SESSION["username"];
 
             // Using prepared statement to prevent SQL injection
